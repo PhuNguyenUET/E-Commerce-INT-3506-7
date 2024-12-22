@@ -1,0 +1,29 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1734837483;s:6:"expire";i:1734841083;s:4:"tags";s:46:"f73_BLOCK_HTML,f73_CAT_P_34,f73_CAT_P,f73_MAGE";}
+
+            <div class="field configurable required">
+            <label class="label" for="attribute138">
+                <span>ROM</span>
+            </label>
+            <div class="control">
+                <select name="super_attribute[138]"
+                        data-selector="super_attribute[138]"
+                        data-validate="{required:true}"
+                        id="attribute138"
+                        class="super-attribute-select">
+                    <option value="">Choose an Option...</option>
+                </select>
+            </div>
+        </div>
+        <script type="text/x-magento-init">
+        {
+            "#product_addtocart_form": {
+                "configurable": {
+                    "spConfig": {"attributes":{"138":{"id":"138","code":"rom","label":"ROM","options":[{"id":"7","label":"512GB","products":["33"]}],"position":"0"}},"template":"<%- data.price %>\u00a0\u20ab","currencyFormat":"%s\u00a0\u20ab","optionPrices":{"33":{"baseOldPrice":{"amount":16990000},"oldPrice":{"amount":16990000},"basePrice":{"amount":16990000},"finalPrice":{"amount":16990000},"tierPrices":[],"msrpPrice":{"amount":0}}},"priceFormat":{"pattern":"%s\u00a0\u20ab","precision":0,"requiredPrecision":0,"decimalSymbol":",","groupSymbol":".","groupLength":3,"integerRequired":true},"prices":{"baseOldPrice":{"amount":16990000},"oldPrice":{"amount":16990000},"basePrice":{"amount":16990000},"finalPrice":{"amount":16990000}},"productId":"34","chooseText":"Choose an Option...","images":{"33":[{"thumb":"http:\/\/andphone.xyz\/media\/catalog\/product\/cache\/c9eafd21c4b5b21d0a5fa1bba3ce0c19\/o\/p\/oppo-reno-11-pro-1-750x500_2.jpg","img":"http:\/\/andphone.xyz\/media\/catalog\/product\/cache\/f6bd723de02e7de8ad9059352dce4155\/o\/p\/oppo-reno-11-pro-1-750x500_2.jpg","full":"http:\/\/andphone.xyz\/media\/catalog\/product\/cache\/582de4bd9d89b52faec2360b42a335e1\/o\/p\/oppo-reno-11-pro-1-750x500_2.jpg","caption":"","position":"1","isMain":true,"type":"image","videoUrl":null}]},"index":{"33":{"138":"7"}},"salable":[],"canDisplayShowOutOfStockStatus":false,"channel":"website","salesChannelCode":"base","sku":{"33":"OPPO Reno11 Pro-512GB"}},
+                    "gallerySwitchStrategy": "replace"
+                }
+            },
+            "*" : {
+                "Magento_ConfigurableProduct/js/catalog-add-to-cart": {}
+            }
+        }
+    </script>

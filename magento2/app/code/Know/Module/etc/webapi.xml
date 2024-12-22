@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/custom-api/products" method="GET">
+        <service class="Know\Module\Api\CustomApiInterface" method="getAllProducts"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/custom-api/product/:id" method="GET">
+        <service class="Know\Module\Api\CustomApiInterface" method="getProduct"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/custom-api/categories" method="GET">
+        <service class="Know\Module\Api\CustomApiInterface" method="getAllCategories"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/custom-api/products/category/:id" method="GET">
+        <service class="Know\Module\Api\CustomApiInterface" method="getProductsByCategory"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>

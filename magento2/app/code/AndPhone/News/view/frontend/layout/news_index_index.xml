@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>News</title>
+        <css src="AndPhone_News::css/news_style.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="AndPhone\News\Block\NewsIndex" name="news_index" template="AndPhone_News::news_index.phtml" />
+        </referenceContainer>
+    </body>
+</page>

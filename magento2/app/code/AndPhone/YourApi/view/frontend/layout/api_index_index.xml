@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+	<title>API List</title>
+        <css src="AndPhone_YourApi::css/api_style.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="AndPhone\YourApi\Block\ApiIndex"
+                   name="api_apiindex"
+                   template="AndPhone_YourApi::api_index.phtml" />
+        </referenceContainer>
+    </body>
+</page>

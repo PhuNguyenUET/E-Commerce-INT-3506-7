@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @var AndPhone\Weather\Block\WeatherIndex $block
+ */
+$hanoi = $block->getWeatherInfoIn('HaNoi');
+$saigon = $block->getWeatherInfoIn('Saigon');
+$danang = $block->getWeatherInfoIn('Danang');
+$hue = $block->getWeatherInfoIn('Hue');
+$vietnam = [$hanoi, $saigon, $danang, $hue];
+$vietnamName = ["Hà Nội", "TP Hồ Chí Minh", "Đà Nẵng", "Huế"];
+
+$tokyo = $block->getWeatherInfoIn('Tokyo');
+$sydney = $block->getWeatherInfoIn('Sydney');
+$london = $block->getWeatherInfoIn('London');
+$paris = $block->getWeatherInfoIn('Paris');
+$seoul = $block->getWeatherInfoIn('Seoul');
+$beijing = $block->getWeatherInfoIn('Beijing');
+$world = [$tokyo, $sydney, $london, $paris, $seoul, $beijing];
+
+//var_dump();
+?>
+<main class="container">
+    <h2 class="region">Vietnam</h2>
+    <div class="card-list">
+        <?php foreach ($vietnam as $index => $city): ?>
+        <div class="card">
+            <div class="first-section">
+                <h2 class="city-name"><?php echo $vietnamName[$index] ?></h2>
+                <h3 class="temp"><?php echo $city['temp'] ?><sup> o</sup>C</h3>
+                    <img class="icon" src="https://openweathermap.org/img/wn/<?php echo $city['icon'] ?>@2x.png">
+            </div>
+            <div class="second-section">
+                <h3 class="info">Cloud: <strong><?php echo $city['clouds'] ?>%</strong></h3>
+                <h3 class="info">Wind: <strong><?php echo $city['wind'] ?> m/s</strong></h3>
+                <h3 class="info">Humidity: <strong><?php echo $city['humidity'] ?>%</strong></h3>
+            </div>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <h2 class="region">World</h2>
+    <div class="card-list">
+        <?php foreach ($world as $city): ?>
+            <div class="card">
+                <div class="first-section">
+                    <h2 class="city-name"><?php echo $city['name'] ?></h2>
+                    <h3 class="temp"><?php echo $city['temp'] ?><sup> o</sup>C</h3>
+                    <img class="icon" src="https://openweathermap.org/img/wn/<?php echo $city['icon'] ?>@2x.png">
+                </div>
+                <div class="second-section">
+                    <h3 class="info">Cloud: <strong><?php echo $city['clouds'] ?>%</strong></h3>
+                    <h3 class="info">Wind: <strong><?php echo $city['wind'] ?> m/s</strong></h3>
+                    <h3 class="info">Humidity: <strong><?php echo $city['humidity'] ?>%</strong></h3>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</main>

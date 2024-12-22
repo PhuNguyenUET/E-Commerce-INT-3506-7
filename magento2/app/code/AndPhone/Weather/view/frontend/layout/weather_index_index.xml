@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Weather</title>
+        <css src="AndPhone_Weather::css/weather_style.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="AndPhone\Weather\Block\WeatherIndex"
+                   name="weather_index"
+                   template="AndPhone_Weather::weather_index.phtml" />
+        </referenceContainer>
+    </body>
+</page>

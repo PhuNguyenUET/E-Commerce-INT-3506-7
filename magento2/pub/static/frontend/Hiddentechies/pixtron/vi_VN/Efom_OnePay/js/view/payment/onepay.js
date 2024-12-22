@@ -1,0 +1,1 @@
+/var/www/html/magento2/app/code/Efom/OnePay/view/frontend/web/js/view/payment/onepay.js
